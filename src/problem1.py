@@ -39,7 +39,10 @@ def run_test_problem1():
     print('--------------------------------------------------')
 
     # Test 1
-
+    expected = 762
+    actual = problem1([Rect(5, 10), Rect(4, 3), Rect(100, 7)])
+    print('expected', expected)
+    print('actual', actual)
 
 
 def problem1(rectangles):
