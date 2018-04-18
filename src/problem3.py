@@ -2,12 +2,12 @@
 Exam 2, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Mariah Mufich.  April 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   In this problem, you will go through the methods of the  Person  class
 #   that is defined below, one by one, in the order that they appear.
 #   For each method:
@@ -37,6 +37,9 @@ def main():
     #   that you write here. So KEEP IT SIMPLE here in main.
     # -------------------------------------------------------------------------
 
+    p2 = Person(9)
+    print(p2.celebrate_birthday()) # should print 10
+
 
 class Person(object):
     def __init__(self, age):
@@ -44,18 +47,26 @@ class Person(object):
         What comes in:  The Person's age.
         Side effects: Sets instance variables as needed by the other methods.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        self.age = age
 
     def get_age(self):
         """ Returns this Person's age. """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        return self.age
 
     def celebrate_birthday(self):
         """
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        print('Happy Birthday')
+        incremented_age = self.age + 1
+        return incremented_age
 
     def celebrate_birthdays(self, n):
         """
