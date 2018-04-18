@@ -159,11 +159,10 @@ def problem2(n, seq):
     # -------------------------------------------------------------------------
     new_list = []
     for k in range(len(seq)):
-        if seq[k] < n:
+        if seq[k] > n:
             new_list = new_list + seq[k]
 
-        return new_list
-    return 'Too few'
+    return new_list
 
 
 
