@@ -56,6 +56,9 @@ def problem1(rectangles):
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
 
+    sum = 0
+    for k in range(len(rectangles)):
+        
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
