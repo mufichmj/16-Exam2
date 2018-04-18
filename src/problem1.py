@@ -25,7 +25,7 @@ class Rect(object):
         self.w = width
         self.h = height
 
-        self.area = width * height
+        # self.area = width * height
 
 
 def run_test_problem1():
@@ -38,9 +38,9 @@ def run_test_problem1():
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
 
-    # Test 1
+    # Test
     expected = 762
-    actual = problem1([Rect(5, 10), Rect(4, 3), Rect(100, 7)])
+    actual = problem1()
     print('expected', expected)
     print('actual', actual)
 
@@ -64,9 +64,11 @@ def problem1(rectangles):
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
 
+
     sum = 0
     for k in range(len(rectangles)):
-        sum = sum + self[k].w * self[k].h
+        area = rectangles.width * rectangles.height
+        sum = sum + area[k]
 
     return sum
 
