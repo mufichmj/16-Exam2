@@ -40,6 +40,9 @@ def main():
     p2 = Person(9)
     print(p2.celebrate_birthday()) # should print 10
 
+    p3 = Person(9)
+    print(p3.celebrate_birthdays(3)) # should print 12
+
 
 class Person(object):
     def __init__(self, age):
@@ -74,6 +77,9 @@ class Person(object):
         Side effects:  Calls the  celebrate_birthday  method  n  times.
         """
         # TODO: Implement and test this method.
+
+        after_birthdays = self.celebrate_birthday() + n
+        return after_birthdays
 
     def older_person(self):
         """
