@@ -67,8 +67,8 @@ def problem1(rectangles):
 
     sum = 0
     for k in range(len(rectangles)):
-        area = rectangles.width * rectangles.height
-        sum = sum + area[k]
+        area = rectangles[k].width * rectangles[k].height
+        sum = sum + area
 
     return sum
 
