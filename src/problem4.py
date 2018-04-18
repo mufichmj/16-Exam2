@@ -157,6 +157,13 @@ def problem4a(strings):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
+    first = ''
+    for k in range(len(strings)):
+        if is_prime(len(strings[k])):
+            first = first + (strings[k])
+
+    return first
+
 
 def run_test_problem4b():
     """ Tests the   problem4b   function. """
