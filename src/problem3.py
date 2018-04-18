@@ -43,6 +43,9 @@ def main():
     p3 = Person(9)
     print(p3.celebrate_birthdays(3)) # should print 12
 
+    p4 = Person(9)
+    print(p4.older_person()) # should print 18
+
 
 class Person(object):
     def __init__(self, age):
@@ -76,7 +79,7 @@ class Person(object):
         What comes in: A non-negative integer n.
         Side effects:  Calls the  celebrate_birthday  method  n  times.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
         after_birthdays = self.celebrate_birthday() + n
         return after_birthdays
@@ -85,7 +88,10 @@ class Person(object):
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        new_person = self.age * 2
+        return new_person
 
 
 # -----------------------------------------------------------------------------
