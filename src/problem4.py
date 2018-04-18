@@ -153,16 +153,22 @@ def problem4a(strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
-    first = ''
+    # first = ''
+    # for k in range(len(strings)):
+    #     if is_prime(len(strings[k])):
+    #         first = first + (strings[k])
+    #
+    # return first
+
     for k in range(len(strings)):
         if is_prime(len(strings[k])):
-            first = first + (strings[k])
+            return strings[k]
 
-    return first
+    return -1
 
 
 def run_test_problem4b():
