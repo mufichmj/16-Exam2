@@ -262,11 +262,24 @@ def problem4b(list_of_tuples_of_strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
+
+    sequence = list_of_tuples_of_strings
+    for k in range(len(sequence)):
+        if is_prime(len(sequence[k])):
+            return True
+
+    # sequence = list_of_tuples_of_strings
+    # for k in range(len(sequence)):
+    #     if is_prime(problem4a(sequence)):
+    #         return True
+
+
+
 
 
 ###############################################################################
