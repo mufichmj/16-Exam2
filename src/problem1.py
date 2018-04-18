@@ -25,6 +25,8 @@ class Rect(object):
         self.w = width
         self.h = height
 
+        self.area = width * height
+
 
 def run_test_problem1():
     """ Tests the   problem1   function. """
@@ -35,6 +37,9 @@ def run_test_problem1():
     print('--------------------------------------------------')
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
+
+    # Test 1
+
 
 
 def problem1(rectangles):
@@ -58,7 +63,10 @@ def problem1(rectangles):
 
     sum = 0
     for k in range(len(rectangles)):
-        
+        sum = sum + self[k].w * self[k].h
+
+    return sum
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
