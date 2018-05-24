@@ -157,15 +157,12 @@ def problem2(n, seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    new_list = []
     sum = []
     for k in range(len(seq)):
-        if seq[k] > n:
+        if seq[k] < n:
             sum = sum + [seq[k]]
         if len(sum) >= 3:
-            for k in range(3):
-                new_list = new_list + [sum[k]]
-            return new_list
+            return sum
 
     return 'Too few'
 
